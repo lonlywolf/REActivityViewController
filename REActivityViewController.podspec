@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.authors     = { 'Roman Efimov' => 'romefimov@gmail.com' }
   s.homepage    = 'https://github.com/romaonthego/REActivityViewController'
   s.summary     = 'Open source alternative to UIActivityViewController, highly customizable and compatible with iOS 5.0.'
-  s.source      = { :git => 'https://github.com/romaonthego/REActivityViewController.git',
+  s.source      = { :git => 'https://github.com/jbagley/REActivityViewController.git',
                     :tag => '1.6.7' }
   s.license     = { :type => "MIT", :file => "LICENSE" }
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'DEFacebookComposeViewController', '~> 1.0.0'
   s.dependency 'REComposeViewController', '~> 2.1.2'
   s.dependency 'SFHFKeychainUtils', '~> 0.0.1'
-  s.dependency 'PocketAPI', '~> 1.0.2'
+ # s.dependency 'PocketAPI', '~> 1.0.2'
   s.dependency 'AFXAuthClient', '~> 1.0.8'
   s.prefix_header_contents = <<-EOS
 #import <Availability.h>
