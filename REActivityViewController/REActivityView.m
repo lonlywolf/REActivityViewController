@@ -79,7 +79,7 @@
 
             UIView *view = [self viewForActivity:activity
                                            index:index
-                                               x:(20 + col*80 + col*20) + page * frame.size.width
+                                               x:((frame.size.width - 280) / 2 + col*80 + col*20) + page * frame.size.width
                                                y:row*80 + row*20];
             [_scrollView addSubview:view];
             index++;
@@ -191,7 +191,7 @@
                     }
                 }
                 
-                frame.origin.x = (20 + col*80 + col*20) + page * self.frame.size.width;
+                frame.origin.x = ((_scrollView.frame.size.width - 280) / 2 + col*80 + col*20) + page * self.frame.size.width;
                 
             } else {
                 col = index%4;
@@ -202,9 +202,9 @@
                 }
                 
                 if (IS_IPHONE_5) {
-                    frame.origin.x = (48 + col*80 + col*50) + page * self.frame.size.width;
+                    frame.origin.x = ((_scrollView.frame.size.width - 280) / 2 + col*80 + col*50) + page * self.frame.size.width;
                 } else {
-                    frame.origin.x = (20 + col*80 + col*40) + page * self.frame.size.width;
+                    frame.origin.x = ((_scrollView.frame.size.width - 280) / 2 + col*80 + col*40) + page * self.frame.size.width;
                 }
             }
             
