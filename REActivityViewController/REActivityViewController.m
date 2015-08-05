@@ -152,7 +152,7 @@
         if (_activities.count <= 3) return 214;
         if (_activities.count <= 6) return 317;
         if (IS_IPHONE_5 && _activities.count > 9) {
-            return 517;
+            return 417;
         }
         return 417;
     } else {

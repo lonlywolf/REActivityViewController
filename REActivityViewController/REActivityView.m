@@ -44,7 +44,7 @@
         _activities = activities;
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-            _backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, (IS_IPHONE_5)? 517 :417)];
+            _backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, (IS_IPHONE_5)? 417 :417)];
             _backgroundImageView.image = [UIImage imageNamed:@"REActivityViewController.bundle/Background"];
             _backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             [self addSubview:_backgroundImageView];
@@ -66,7 +66,7 @@
             col = index%3;
             if (index % 3 == 0) row++;
             if (IS_IPHONE_5) {
-                if (index % 12 == 0) {
+                if (index % 9 == 0) {
                     row = 0;
                     page++;
                 }
@@ -180,7 +180,7 @@
                 col = index%3;
                 if (index % 3 == 0) row++;
                 if (IS_IPHONE_5) {
-                    if (index % 12 == 0) {
+                    if (index % 9 == 0) {
                         row = 0;
                         page++;
                     }
